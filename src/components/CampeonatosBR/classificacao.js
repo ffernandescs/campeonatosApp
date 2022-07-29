@@ -16,8 +16,6 @@ import {
   from './styles';
   import Loading from '../Loading';
 
-
-
 export default function Classificacao({navigation, route}) {
   const serie = route.params
 
@@ -99,15 +97,18 @@ export default function Classificacao({navigation, route}) {
               style={{
                 fontSize: 18,
                 textTransform: 'none',
-                color: '#000'
+                color: '#fff'
               }}
             >{league.name}</Title>
             <Title
               style={{
                 fontWeight: 'normal',
                 position: 'relative',
-                left: -15
+                left: -15,
+                color: '#fff'
+
               }}
+
             >{league.season}</Title>
           </View>
         </View>
@@ -181,7 +182,17 @@ export default function Classificacao({navigation, route}) {
                     <Time>{item.team.name}</Time>
                   </ListOne>
                   <ListTwo>
-                    <Points>{item.points}</Points>
+                    <View
+                      style={{
+                        backgroundColor: '#FFDEAD',
+                        height: 40,
+                        borderBottomColor: '#D6D6D6',
+                        borderStyle: 'solid',
+                        borderBottomWidth: 1
+                      }}
+                    >
+                      <Points>{item.points}</Points>
+                    </View>
                     <Points>{item.all.win}</Points>
                     <Points>{item.all.draw}</Points>
                     <Points>{item.all.lose}</Points>

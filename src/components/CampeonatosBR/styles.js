@@ -40,7 +40,7 @@ export const TableTHead = styled.Text`
 `
 export const Container = styled.SafeAreaView`
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: #363636;
   flex: 1;
   justify-content: center;
 `
@@ -54,7 +54,7 @@ export const Category = styled.View`
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  background-color: #000;
+  background-color: #363636;
   height: 30;
 `
 export const CategoryOne = styled.View`
